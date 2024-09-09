@@ -1,0 +1,192 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Text Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #d0e7ff;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #1a76d2;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1a76d2;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff867f;
+}
+
+/* Section Titles */
+section h2, section h3 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #1a76d2;
+    text-align: center;
+}
+
+/* General Section Styles */
+main {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Image Styles */
+img.portrait {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 50%;
+    height: auto;
+    width: 250px;
+    border: 4px solid #1a76d2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #1a76d2;
+}
+
+.award {
+    border: none;
+    width: 300px;
+}
+
+/* Gallery Styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.gallery figure {
+    text-align: center;
+}
+
+.gallery figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 5px;
+    color: #ff867f;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #d0e7ff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+footer p {
+    color: #1a76d2;
+}
+
+/* Blockquote Styles (for Artistic Inspirations) */
+blockquote {
+    font-style: italic;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 20px;
+    max-width: 600px;
+    border-left: 5px solid #1a76d2;
+    background-color: #e3f2fd;
+    color: #1a76d2;
+}
+
+/* Contact Links */
+section ul {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+section ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+section ul li a {
+    text-decoration: none;
+    color: #ff867f;
+    font-weight: bold;
+}
+
+section ul li a:hover {
+    color: #1a76d2;
+}
+
+/* Typography (Headers and Body Text) */
+h1, h2, h3 {
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+p, li, figcaption {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Grid and Layout Settings */
+main, section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
